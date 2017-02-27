@@ -3037,6 +3037,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="SPICEMODEL" value="NONE" x="-17.78" y="-121.92" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="-17.78" y="-121.92" size="1.778" layer="27" display="off"/>
 </element>
+<element name="R5" library="rcl" package="R0603" value="" x="-17.78" y="-127"/>
+<element name="R6" library="rcl" package="R0603" value="" x="-17.78" y="-130.81"/>
 </elements>
 <signals>
 <signal name="VIN">
@@ -3056,6 +3058,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$21" pad="CATHODE"/>
 <contactref element="C5" pad="2"/>
 <contactref element="U2" pad="5"/>
+<contactref element="R6" pad="2"/>
+<wire x1="-16.93" y1="-121.92" x2="-16.93" y2="-130.81" width="0" layer="19" extent="1-1"/>
 <wire x1="-18.73" y1="-110.4599" x2="-16.93" y2="-121.92" width="0" layer="19" extent="1-1"/>
 <wire x1="32.967878125" y1="-73.42005625" x2="-18.73" y2="-110.4599" width="0" layer="19" extent="1-1"/>
 <wire x1="34.999878125" y1="-73.42005625" x2="32.967878125" y2="-73.42005625" width="0" layer="19" extent="1-1"/>
@@ -3594,6 +3598,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C4" pad="2"/>
 <contactref element="U2" pad="1"/>
 <contactref element="U2" pad="3"/>
+<contactref element="R5" pad="2"/>
+<wire x1="-16.93" y1="-116.84" x2="-16.93" y2="-127" width="0" layer="19" extent="1-1"/>
 <wire x1="-16.83" y1="-113.0601" x2="-16.93" y2="-116.84" width="0" layer="19" extent="1-1"/>
 <wire x1="-18.73" y1="-113.0601" x2="-16.83" y2="-113.0601" width="0" layer="19" extent="1-1"/>
 </signal>
