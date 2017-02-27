@@ -8492,6 +8492,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY64" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY59" library="supply2" deviceset="GND" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY65" library="supply2" deviceset="+9V" device=""/>
+<part name="SUPPLY66" library="supply2" deviceset="+9V" device=""/>
+<part name="SUPPLY67" library="supply2" deviceset="+9V" device=""/>
+<part name="SUPPLY68" library="supply2" deviceset="+9V" device=""/>
+<part name="SUPPLY69" library="supply2" deviceset="-9V" device=""/>
+<part name="SUPPLY71" library="supply2" deviceset="-9V" device=""/>
+<part name="SUPPLY72" library="supply2" deviceset="-9V" device=""/>
+<part name="SUPPLY73" library="supply2" deviceset="-9V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8504,7 +8512,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="40.64" y="139.7" size="1.778" layer="91">Signal GND</text>
 <text x="180.34" y="256.54" size="1.778" layer="91">Signal GND</text>
 <text x="180.34" y="139.7" size="1.778" layer="91">Signal GND</text>
-<text x="-53.34" y="7.62" size="5.08" layer="91">The GND shown by the Supply Symble is virtual ground and is the ground of V+ and V-
+<text x="-53.34" y="7.62" size="5.08" layer="91">The GND shown by the Supply Symble is the virtual ground for V+ and V-
 They are produced by two 9v betteries</text>
 </plain>
 <instances>
@@ -8662,6 +8670,14 @@ They are produced by two 9v betteries</text>
 <instance part="SUPPLY64" gate="GND" x="228.6" y="20.32"/>
 <instance part="SUPPLY59" gate="GND" x="233.68" y="111.76"/>
 <instance part="GND1" gate="1" x="276.86" y="30.48"/>
+<instance part="SUPPLY65" gate="G$1" x="27.94" y="254"/>
+<instance part="SUPPLY66" gate="G$1" x="167.64" y="254"/>
+<instance part="SUPPLY67" gate="G$1" x="27.94" y="137.16"/>
+<instance part="SUPPLY68" gate="G$1" x="167.64" y="137.16"/>
+<instance part="SUPPLY69" gate="G$1" x="27.94" y="109.22"/>
+<instance part="SUPPLY71" gate="G$1" x="167.64" y="109.22"/>
+<instance part="SUPPLY72" gate="G$1" x="167.64" y="226.06"/>
+<instance part="SUPPLY73" gate="G$1" x="27.94" y="226.06"/>
 </instances>
 <busses>
 </busses>
@@ -9003,6 +9019,8 @@ They are produced by two 9v betteries</text>
 <pinref part="IC3" gate="P" pin="V+"/>
 <pinref part="C21" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="246.38" x2="27.94" y2="251.46" width="0.1524" layer="91"/>
+<pinref part="SUPPLY65" gate="G$1" pin="+9V"/>
+<junction x="27.94" y="251.46"/>
 </segment>
 <segment>
 <pinref part="U$14" gate="G$1" pin="V+"/>
@@ -9021,6 +9039,7 @@ They are produced by two 9v betteries</text>
 <wire x1="30.48" y1="55.88" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
 <junction x="30.48" y="55.88"/>
 <pinref part="SUPPLY51" gate="G$1" pin="+9V"/>
+<wire x1="30.48" y1="55.88" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$20" gate="G$1" pin="V+"/>
@@ -9030,6 +9049,27 @@ They are produced by two 9v betteries</text>
 <wire x1="170.18" y1="55.88" x2="170.18" y2="58.42" width="0.1524" layer="91"/>
 <junction x="170.18" y="55.88"/>
 <pinref part="SUPPLY50" gate="G$1" pin="+9V"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="P" pin="V+"/>
+<pinref part="C37" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="246.38" x2="167.64" y2="251.46" width="0.1524" layer="91"/>
+<pinref part="SUPPLY66" gate="G$1" pin="+9V"/>
+<junction x="167.64" y="251.46"/>
+</segment>
+<segment>
+<pinref part="IC7" gate="P" pin="V+"/>
+<pinref part="C51" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="129.54" x2="167.64" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="SUPPLY68" gate="G$1" pin="+9V"/>
+<junction x="167.64" y="134.62"/>
+</segment>
+<segment>
+<pinref part="IC6" gate="P" pin="V+"/>
+<pinref part="C44" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="129.54" x2="27.94" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="SUPPLY67" gate="G$1" pin="+9V"/>
+<junction x="27.94" y="134.62"/>
 </segment>
 </net>
 <net name="VS-" class="0">
@@ -9053,6 +9093,8 @@ They are produced by two 9v betteries</text>
 <pinref part="IC3" gate="P" pin="V-"/>
 <pinref part="C20" gate="G$1" pin="2"/>
 <wire x1="27.94" y1="228.6" x2="27.94" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="SUPPLY73" gate="G$1" pin="-9V"/>
+<junction x="27.94" y="228.6"/>
 </segment>
 <segment>
 <pinref part="U$14" gate="G$1" pin="V-"/>
@@ -9080,6 +9122,27 @@ They are produced by two 9v betteries</text>
 <wire x1="170.18" y1="48.26" x2="170.18" y2="50.8" width="0.1524" layer="91"/>
 <junction x="170.18" y="50.8"/>
 <pinref part="SUPPLY48" gate="G$1" pin="-9V"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="P" pin="V-"/>
+<pinref part="C36" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="228.6" x2="167.64" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="SUPPLY72" gate="G$1" pin="-9V"/>
+<junction x="167.64" y="228.6"/>
+</segment>
+<segment>
+<pinref part="IC6" gate="P" pin="V-"/>
+<pinref part="C43" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="111.76" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="SUPPLY69" gate="G$1" pin="-9V"/>
+<junction x="27.94" y="111.76"/>
+</segment>
+<segment>
+<pinref part="IC7" gate="P" pin="V-"/>
+<pinref part="C50" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="111.76" x2="167.64" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="SUPPLY71" gate="G$1" pin="-9V"/>
+<junction x="167.64" y="111.76"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -9255,20 +9318,6 @@ They are produced by two 9v betteries</text>
 <wire x1="218.44" y1="134.62" x2="243.84" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VS+1" class="0">
-<segment>
-<pinref part="IC5" gate="P" pin="V+"/>
-<pinref part="C37" gate="G$1" pin="1"/>
-<wire x1="167.64" y1="246.38" x2="167.64" y2="251.46" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VS-1" class="0">
-<segment>
-<pinref part="IC5" gate="P" pin="V-"/>
-<pinref part="C36" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="228.6" x2="167.64" y2="231.14" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$37" class="0">
 <segment>
 <wire x1="109.22" y1="172.72" x2="124.46" y2="172.72" width="0.1524" layer="91"/>
@@ -9370,20 +9419,6 @@ They are produced by two 9v betteries</text>
 <wire x1="152.4" y1="215.9" x2="152.4" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VS+2" class="0">
-<segment>
-<pinref part="IC6" gate="P" pin="V+"/>
-<pinref part="C44" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="129.54" x2="27.94" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VS-2" class="0">
-<segment>
-<pinref part="IC6" gate="P" pin="V-"/>
-<pinref part="C43" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="111.76" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$47" class="0">
 <segment>
 <wire x1="-30.48" y1="55.88" x2="-15.24" y2="55.88" width="0.1524" layer="91"/>
@@ -9483,20 +9518,6 @@ They are produced by two 9v betteries</text>
 <pinref part="R40" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="99.06" x2="12.7" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="99.06" x2="12.7" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VS+3" class="0">
-<segment>
-<pinref part="IC7" gate="P" pin="V+"/>
-<pinref part="C51" gate="G$1" pin="1"/>
-<wire x1="167.64" y1="129.54" x2="167.64" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VS-3" class="0">
-<segment>
-<pinref part="IC7" gate="P" pin="V-"/>
-<pinref part="C50" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="111.76" x2="167.64" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$56" class="0">
