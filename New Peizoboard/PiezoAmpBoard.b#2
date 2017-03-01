@@ -3652,21 +3652,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="D2" pad="A"/>
 <wire x1="-18.63" y1="-130.81" x2="-25.4" y2="-130.417" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$3">
-<contactref element="U$2" pad="3"/>
-<contactref element="D3" pad="A"/>
-<wire x1="-13.97" y1="-60.96" x2="-25.4" y2="-135.497" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$4">
-<contactref element="U$2" pad="4"/>
-<contactref element="D4" pad="A"/>
-<wire x1="-13.97" y1="-63.5" x2="-25.4" y2="-139.307" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$5">
-<contactref element="U$2" pad="5"/>
-<contactref element="D5" pad="A"/>
-<wire x1="-13.97" y1="-66.04" x2="-25.4" y2="-143.117" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$6">
 <contactref element="D3" pad="C"/>
 <contactref element="R9" pad="2"/>
@@ -3681,6 +3666,21 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="D5" pad="C"/>
 <contactref element="R7" pad="2"/>
 <wire x1="-25.4" y1="-141.363" x2="-24.55" y2="-146.05" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3">
+<contactref element="U$2" pad="38"/>
+<contactref element="D3" pad="A"/>
+<wire x1="1.27" y1="-96.52" x2="-25.4" y2="-135.497" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="U$2" pad="37"/>
+<contactref element="D4" pad="A"/>
+<wire x1="1.27" y1="-99.06" x2="-25.4" y2="-139.307" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$5">
+<contactref element="U$2" pad="36"/>
+<contactref element="D5" pad="A"/>
+<wire x1="1.27" y1="-101.6" x2="-25.4" y2="-143.117" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <errors>
