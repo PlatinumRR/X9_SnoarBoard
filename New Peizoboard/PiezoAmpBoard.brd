@@ -3791,15 +3791,23 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="RX">
 <contactref element="U$2" pad="0"/>
+<contactref element="U$3" pad="R0"/>
+<wire x1="-13.97" y1="-53.34" x2="-52.07" y2="-160.02" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TX">
 <contactref element="U$2" pad="1"/>
+<contactref element="U$3" pad="DI"/>
+<wire x1="-13.97" y1="-55.88" x2="-52.07" y2="-163.83" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="SCL">
+<signal name="RE">
+<contactref element="U$3" pad="!RE"/>
 <contactref element="U$2" pad="3"/>
-</signal>
-<signal name="SDA">
 <contactref element="U$2" pad="4"/>
+<wire x1="-13.97" y1="-63.5" x2="-52.07" y2="-161.29" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.97" y1="-60.96" x2="-13.97" y2="-63.5" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DE">
+<contactref element="U$3" pad="DE"/>
 </signal>
 </signals>
 <errors>

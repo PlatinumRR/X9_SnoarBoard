@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="8.0.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2908,21 +2908,21 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$4" library="AD82216" package="SOIC08" value="AD82216" x="27.734965625" y="14.649465625" rot="R270"/>
 <element name="U1" library="adafruit" package="ARDUINOR3-BPLACE" value="ARDUINOR3-BPLACE" x="10.972375" y="2.54"/>
 <element name="X1" library="con-molex" package="22-23-2021" value="22-23-2021" x="74.22489375" y="13.63450625" rot="R90">
-<attribute name="MPN" value="22-23-2021" x="74.22489375" y="13.63450625" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="MOLEX" x="74.22489375" y="13.63450625" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="25C3832" x="74.22489375" y="13.63450625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="22-23-2021" x="74.22489375" y="13.63450625" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="1462926" x="74.22489375" y="13.63450625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="25C3832" x="74.22489375" y="13.63450625" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="X2" library="con-molex" package="22-23-2021" value="22-23-2021" x="73.171634375" y="46.317578125" rot="R90">
-<attribute name="MPN" value="22-23-2021" x="73.171634375" y="46.317578125" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="MOLEX" x="73.171634375" y="46.317578125" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="25C3832" x="73.171634375" y="46.317578125" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="22-23-2021" x="73.171634375" y="46.317578125" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="1462926" x="73.171634375" y="46.317578125" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="25C3832" x="73.171634375" y="46.317578125" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U$6" library="BAV99T" package="SOT-523" value="BAV99T" x="62.77190625" y="8.385715625" rot="R90"/>
 <element name="C28" library="eagle-ltspice" package="C0603" value=".1uF" x="59.526221875" y="10.6775875" rot="R180">
-<attribute name="SPICEPREFIX" value="C" x="59.526221875" y="10.6775875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SPICEMODEL" value="NONE" x="59.526221875" y="10.6775875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="59.526221875" y="10.6775875" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U$11" library="3mmJack" package="1X05" value="3MMJACK" x="6.562040625" y="14.436203125"/>
 <element name="U$14" library="AD82216" package="SOIC08" value="AD82216" x="27.866628125" y="25.376184375" rot="R270"/>
@@ -3062,6 +3062,12 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R6" library="rcl" package="R0603" value="" x="-17.78" y="-130.81"/>
 <element name="D1" library="SparkFun-LED" package="LED-0603" value="" x="-21.59" y="-129.54"/>
 <element name="D2" library="SparkFun-LED" package="LED-0603" value="" x="-25.4" y="-129.54"/>
+<element name="D3" library="SparkFun-LED" package="LED-0603" value="" x="-25.4" y="-134.62"/>
+<element name="D4" library="SparkFun-LED" package="LED-0603" value="" x="-25.4" y="-138.43"/>
+<element name="D5" library="SparkFun-LED" package="LED-0603" value="" x="-25.4" y="-142.24"/>
+<element name="R7" library="rcl" package="R0603" value="" x="-25.4" y="-146.05"/>
+<element name="R8" library="rcl" package="R0603" value="" x="-25.4" y="-151.13"/>
+<element name="R9" library="rcl" package="R0603" value="" x="-25.4" y="-156.21"/>
 </elements>
 <signals>
 <signal name="VIN">
@@ -3114,6 +3120,12 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C2" pad="2"/>
 <contactref element="D1" pad="C"/>
 <contactref element="D2" pad="C"/>
+<contactref element="R9" pad="1"/>
+<contactref element="R7" pad="1"/>
+<contactref element="R8" pad="1"/>
+<wire x1="-26.25" y1="-151.13" x2="-26.25" y2="-156.21" width="0" layer="19" extent="1-1"/>
+<wire x1="-26.25" y1="-146.05" x2="-26.25" y2="-151.13" width="0" layer="19" extent="1-1"/>
+<wire x1="-25.4" y1="-128.663" x2="-26.25" y2="-146.05" width="0" layer="19" extent="1-1"/>
 <wire x1="-21.59" y1="-128.663" x2="-25.4" y2="-128.663" width="0" layer="19" extent="1-1"/>
 <wire x1="-18.63" y1="-121.92" x2="-21.59" y2="-128.663" width="0" layer="19" extent="1-1"/>
 <wire x1="-18.63" y1="-116.84" x2="-18.63" y2="-121.92" width="0" layer="19" extent="1-1"/>
@@ -3639,6 +3651,36 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R6" pad="1"/>
 <contactref element="D2" pad="A"/>
 <wire x1="-18.63" y1="-130.81" x2="-25.4" y2="-130.417" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3">
+<contactref element="U$2" pad="3"/>
+<contactref element="D3" pad="A"/>
+<wire x1="-13.97" y1="-60.96" x2="-25.4" y2="-135.497" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="U$2" pad="4"/>
+<contactref element="D4" pad="A"/>
+<wire x1="-13.97" y1="-63.5" x2="-25.4" y2="-139.307" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$5">
+<contactref element="U$2" pad="5"/>
+<contactref element="D5" pad="A"/>
+<wire x1="-13.97" y1="-66.04" x2="-25.4" y2="-143.117" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$6">
+<contactref element="D3" pad="C"/>
+<contactref element="R9" pad="2"/>
+<wire x1="-25.4" y1="-133.743" x2="-24.55" y2="-156.21" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$7">
+<contactref element="D4" pad="C"/>
+<contactref element="R8" pad="2"/>
+<wire x1="-25.4" y1="-137.553" x2="-24.55" y2="-151.13" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$8">
+<contactref element="D5" pad="C"/>
+<contactref element="R7" pad="2"/>
+<wire x1="-25.4" y1="-141.363" x2="-24.55" y2="-146.05" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <errors>

@@ -3704,7 +3704,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="8.497171875" y1="-50.2788625" x2="4.530540625" y2="-55.5124625" width="0" layer="19" extent="1-1"/>
 <wire x1="9.767171875" y1="-45.0788625" x2="8.497171875" y2="-50.2788625" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="GND5">
+<signal name="AGND">
 <contactref element="U$1" pad="OUT"/>
 <contactref element="R4" pad="1"/>
 <contactref element="R3" pad="1"/>
@@ -3788,6 +3788,18 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$3" pad="A"/>
 <contactref element="J1" pad="5"/>
 <wire x1="-41.275" y1="-139.7" x2="-46.1515" y2="-161.29" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RX">
+<contactref element="U$2" pad="0"/>
+</signal>
+<signal name="TX">
+<contactref element="U$2" pad="1"/>
+</signal>
+<signal name="SCL">
+<contactref element="U$2" pad="3"/>
+</signal>
+<signal name="SDA">
+<contactref element="U$2" pad="4"/>
 </signal>
 </signals>
 <errors>
